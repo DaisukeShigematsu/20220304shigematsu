@@ -11,8 +11,8 @@ justify-content: space-between;
 align-items: center;
 height: 70px;
 padding: 0 30px;
-background-color: #000;
-color: #fff;
+background-color: #fff;
+color: #000;
 }
 
 .header-ttl {
