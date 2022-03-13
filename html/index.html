@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/index.css" />
-  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="../CSS/index.css" />
+  <link rel="stylesheet" href="../CSS/reset.css" />
   <script src="js/main.js"></script>
   <title> index.html</title>
 
@@ -13,12 +13,12 @@
 <body>
 
 
-  <header>
-    <h1 class="header-logo">
+  <header class="header">
+    <div class="header-logo">
       <a href="index.html">
-        <img src="img/logo.png" width="200px" height="auto" alt="">
+        <img src="../img/logo.png" width="150px" height="auto" alt="">
       </a>
-    </h1>
+    </div>
     <nav class="header-nav">
       <ul class="header-nav-list">
         <li class="header-nav-item"><a href="index.html">ホーム</a></li>
@@ -34,7 +34,7 @@
 <main>
 
   <div class="firstview">
-    <div class="firstview__eyecatch"><img src="img/mv.png" alt=""></div>
+    <div class="firstview__eyecatch"><img src="../img/mv.png" alt=""></div>
     <div class="firstview__content">
       <h1 class="firstview__content-eyecatch">最新のテクノロジーで社会課題を解決する</h1>
       <p class="firstview__content-sub-copy">Solving social issues with the latest technology</p>
@@ -44,12 +44,79 @@
 
 
 
+  <div class="message">
+    <div class="message__content">
+      <div class="message__title">株式会社TECHの想い</div>
+        <div class="message__text">あらゆる産業において、新たなデジタル技術を使ってこれまでにないビジネスモデルを展開する新規参入者が登場し、ゲームチェンジが起ころうとしています。こうした中で、各企業は、競争力維持・強化のために、DXを迅速に進めていくことが求められています。しかし、DXにおいて投資コストは非常にかかります。株式会社TECHでは独自のオペレーションと人材教育により、他社よりも価格を抑えた開発を行います。
+        </div>
+    </div>
+  </div>
+
+
+  <div class="service">サービス</div>
+  <div class="container">
+    <div class="card1">
+      <img src="../img/service1.png" alt="">
+      <div class="service__title1">IT人材育成事業</div>
+      <div class="service__content">
+      これまでに培った教育手法を生かして、短期間で即戦力のIT人材を育成します。
+      </div>
+    </div>
+    <div class="card2">
+      <img src="../img/service2.png" alt="">
+      <div class="service__title1">コーチング事業</div>
+      <div class="service__content">
+      目標達成を最短で実現するために、プロのコーチによるマンツーマンのサポートを実施します。
+      </div>
+    </div>
+    <div class="card3">
+      <img src="../img/service3.png" alt="">
+      <div class="service__title1">ITコンサル事業</div>
+      <div class="service__content">
+      経営戦略にIT戦略を策定し、システム開発の提案やシステムの最適化を通じて、企業の経営をサポートします。
+      </div>
+    </div>
+    <div class="card4">
+      <img src="../img/service4.png" alt="">
+      <div class="service__title1">デジタルトランスフォーメーション事業</div>
+      <div class="service__content">
+      人々の生活をよりよいものに変革するために様々なデジタル技術を活用し、革新的なソリューションやサービスを生み出します。
+      </div>
+    </div>
+    <div class="service__link" alt="">サービス一覧をみる</div>
+  </div>
+
+
+  <div class="news__content">
+    <div class="news__title">ニュース</div>
+    <div class="news__link_btn" alt="">ニュース一覧を見る</div>
+    <div class="news__link1" alt="">会社を創業しました。</div>
+    <div class="news__link2" alt="">資金を調達しました。</div>
+    <div class="news__link3" alt="">東京新聞に掲載されました。</div>
+  </div>
+
+  <div class="blog__content">
+    <div class="blog__title">社員ブログ</div>
+    <div class="blog__link1" alt="">2019/07/17 会社を創業しました。</div>
+    <div class="blog__link2" alt="">2020/04/01 資金調達を行いました。</div>
+    <div class="blog__link3" alt="">2020/10/01 東京新聞に掲載されました。</div>
+    <div class="blog__link_btn" alt="">社員ブログ一覧を見る</div>
+  </div>
+
+
+
+  <div class="company__link" alt="">会社概要</div>
+  <div class="company__link" alt="">採用情報</div>
 
 
 
 
 
-
+  <div id="contact">
+    <h2 class="contact__ttl">お問合わせ</h2>
+    <p>お仕事のご依頼や採用に関してはお問合せにて承っております。</p>
+    <a href="" class="contact__btn">お問い合わせ</a>
+  </div>
 
 
 
@@ -62,9 +129,11 @@
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-ttl">
-        <a href="index.html">TECH</a>
+        <a href="index.html">
+          &copy; 2022 TECH, inc
+        </a>
       </div>
-      <nav class="footer-nav">
+      <div class="footer-ttl">
         <ul class="footer-nav-list">
           <li class="footer-nav-item"><a href="service.html">事業内容</a></li>
           <li class="footer-nav-item"><a href="news.html">ニュース</a></li>
@@ -73,11 +142,8 @@
           <li class="footer-nav-item"><a href="recruit.html">採用情報</a></li>
           <li class="footer-nav-item"><a href="contact.html">お問い合わせ</a></li>
         </ul>
-      </nav>
+      </div>
     </div>
-    <small class="copyright">
-      &copy; 2022 TECH, inc
-    </small>
   </footer>
 
 </body>

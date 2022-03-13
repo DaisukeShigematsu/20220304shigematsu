@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/company.css" />
-  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="../CSS/company.css" />
+  <link rel="stylesheet" href="../CSS/reset.css" />
   <script src="js/main.js"></script>
   <title> company.html</title>
 </head>
@@ -16,7 +16,7 @@
 <header class="header">
   <div class="header-logo">
     <a href="index.html">
-      <img src="img/logo.png" width="200px" height="auto" alt="">
+      <img src="../img/logo.png" width="150px" height="auto" alt="">
     </a>
   </div>
   <nav class="header-nav">
@@ -33,52 +33,59 @@
 </header>
 
 <main>
-<div class="firstview">
-  <div class="firstview__eyecatch"><img src="img/mv.png" alt=""></div>
+  <div class="firstview">
+  <div class="firstview__eyecatch"><img src="../img/mv.png" alt=""></div>
   <div class="firstview__content">
     <h2 class="firstview__content-eyecatch">会社概要</h2>
   </div>
-</div>
-<div id="company" class="small-container">
-  <ul class="company__list">
-    <li>
-      <a class="company__list-link" href="">
-        <span class="company__list-data">会社名</span>
-        <span class="company__list-detail">株式会社TECH</span>
-      </a>
-    </li>
-    <li>
-      <a class="company__list-link" href="">
-        <span class="company__list-data">代表者</span>
-        <span class="company__list-detail">山田太郎</span>
-      </a>
-    </li>
-    <li>
-      <a class="company__list-link" href="">
-        <span class="company__list-data">所在地</span>
-        <span class="company__list-detail">東京都渋谷区神宮前</span>
-      </a>
-    </li>
-    <li>
-      <a class="company__list-link" href="">
-        <span class="company__list-data">設立</span>
-        <span class="company__list-detail">2019/07/07</span>
-      </a>
-    </li>
-    <li>
-      <a class="company__list-link" href="">
-        <span class="company__list-data">従業員数</span>
-        <span class="company__list-detail">100名</span>
-      </a>
-    </li>
-    <li>
-      <a class="company__list-link" href="">
-        <span class="company__list-data">資本金</span>
-        <span class="company__list-detail">1000万円</span>
-      </a>
-    </li>
-  </ul>
-</div>
+  </div>
+  <div id="company" class="small-container">
+    <ul class="list">
+      <li>
+        <a class="company__list" href="">
+          <span class="company__list-data">会社名</span>
+          <span class="company__list-detail">株式会社TECH</span>
+        </a>
+      </li>
+      <li>
+        <a class="company__list" href="">
+          <span class="company__list-data">代表者</span>
+          <span class="company__list-detail">山田太郎</span>
+        </a>
+      </li>
+      <li>
+        <a class="company__list" href="">
+          <span class="company__list-data">所在地</span>
+          <span class="company__list-detail">東京都渋谷区神宮前</span>
+        </a>
+      </li>
+      <li>
+        <a class="company__list" href="">
+          <span class="company__list-data">設立</span>
+          <span class="company__list-detail">2019/07/07</span>
+        </a>
+      </li>
+      <li>
+        <a class="company__list" href="">
+          <span class="company__list-data">従業員数</span>
+          <span class="company__list-detail">100名</span>
+        </a>
+      </li>
+      <li>
+        <a class="company__list" href="">
+          <span class="company__list-data">資本金</span>
+          <span class="company__list-detail">1000万円</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+  <div id="contact">
+    <h2 class="contact__ttl">お問合わせ</h2>
+    <p>お仕事のご依頼や採用に関してはお問合せにて承っております。</p>
+    <a href="" class="contact__btn">お問い合わせ</a>
+  </div>
 
 
 
@@ -86,12 +93,6 @@
 
 
 
-
-<div id="contact">
-  <h2 class="contact__ttl">お問合わせ</h2>
-  <p>お仕事のご依頼や採用に関してはお問合せにて承っております。</p>
-  <a href="" class="contact__btn">お問い合わせ</a>
-</div>
 
 
 
@@ -111,9 +112,11 @@
 
   <footer class="footer">
     <div class="footer-inner">
-      <div class="footer-ttl">
-        <a href="index.html">TECH</a>
-      </div>
+        <div class="footer-ttl">
+          <a href="index.html">
+            &copy; 2022 TECH, inc
+          </a>
+        </div>
       <nav class="footer-nav">
         <ul class="footer-nav-list">
           <li class="footer-nav-item"><a href="service.html">事業内容</a></li>
@@ -125,9 +128,6 @@
         </ul>
       </nav>
     </div>
-    <small class="copyright">
-      &copy; 2022 TECH, inc
-    </small>
   </footer>
 </body>
 
