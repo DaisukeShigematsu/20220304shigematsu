@@ -42,14 +42,14 @@ a {
 
 .firstview__content-eyecatch {
   color: #fff;
-  font-size: 40px;
+  font-size: 30px;
   margin: 0 auto;
 }
 
 .firstview__content {
   position: absolute;
-  top: 120px;
-  left: 50%;
+  top: 100px;
+  left: 45%;
 }
 
 /*------------------------------------ */
@@ -82,9 +82,16 @@ a {
   justify-content: center;
   padding: 20px, 20px;
   font-size: 12px;
+  list-style: none;
+  margin-right:100px;
+
 }
 
 .footer-nav-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.copy{
+  margin-left:100px;
 }
 /*------------------------------------ */

@@ -50,7 +50,7 @@ a {
 
 .firstview__content {
   position: absolute;
-  top: 120px;
+  top: 100px;
   left: 45%;
 }
 
@@ -156,9 +156,14 @@ a {
   justify-content: center;
   padding: 20px, 20px;
   font-size: 12px;
+  margin-right: 100px;
 }
 
 .footer-nav-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.copy {
+  margin-left: 100px;
 }
 /*------------------------------------ */
