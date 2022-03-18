@@ -137,13 +137,12 @@ a {
   width: 100%;
   background-color: #000;
   color: #fff;
-  padding: 20px 20px;
+  padding: 20px;
   text-align: center;
 }
 .footer-inner {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
 }
 .footer-ttl {
   font-size: 12px;
@@ -154,8 +153,9 @@ a {
   display: flex;
   width: 100%;
   justify-content: center;
-  padding: 20px, 20px;
+  padding: 20px, 0px;
   font-size: 12px;
+  list-style: none;
   margin-right: 100px;
 }
 
