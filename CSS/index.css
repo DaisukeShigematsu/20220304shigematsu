@@ -70,31 +70,29 @@ a {
 /*-----------message------------------------- */
 
 .message {
-  height:300px;
+  height: 300px;
   background-color: #000;
   color: #fff;
   padding: 80px, 0px;
-  margin:80px,0;
+  margin: 80px, 0;
 }
 
 .message_content {
-  display:block;
+  display: block;
   width: 85%;
-  margin:0 auto;
-  padding:80px;
+  margin: 0 auto;
+  padding: 80px;
 }
-
 
 .message_ttl {
   font-size: 30px;
   font-weight: bold;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
-
 .message_text {
-  margin-top:20px;
+  margin-top: 20px;
 }
 
 /*--------------service------------------ */
@@ -103,27 +101,20 @@ a {
   padding: 80px 0;
 }
 
-
-
-
-.top_service_list{
-display:flex;
-flex-wrap: wrap;
-width:85%;
-height:auto;
-align-items: center;
-margin-right:0;
+.top_service_list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  height: auto;
+  align-items: center;
+  margin-right: 0;
 }
 
-.top_service_ttl{
-font-size: 30px;
-font-weight: bold;
-text-align: center;
+.top_service_ttl {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
 }
-
-
-
-
 
 .service_content_wrap {
   display: flex;
@@ -133,47 +124,37 @@ text-align: center;
   margin: 0 auto;
 }
 
-
-
-.service_content{
-  width:49%;
-  margin-top:20px;
+.service_content {
+  width: 49%;
+  margin-top: 20px;
 }
 
-
 .service_detail {
-  display:inline-block;
-  margin-right:0;
+  display: inline-block;
+  margin-right: 0;
 }
 
 .service_item_ttl {
-  font-size  : 18px;
+  font-size: 18px;
   font-weight: bold;
-  padding    : 10px;
+  padding: 10px;
 }
 
-.service_text{
-display:inline-block;
+.service_text {
+  display: inline-block;
 }
 
-
-.service_link_btn{
-  display:block;
+.service_link_btn {
+  display: block;
   text-align: center;
-  width:300px;
-  font-weight:bold;
-  padding:10px;
+  width: 300px;
+  font-weight: bold;
+  padding: 10px;
   background-color: #cc0000;
-  color:#fff;
-  margin-top:40px;
-  margin:0 auto;
+  color: #fff;
+  margin-top: 40px;
+  margin: 0 auto;
 }
-
-
-
-
-
-
 
 /*--------------news------------------ */
 
