@@ -1,10 +1,8 @@
 /*-------contact CSS-------------- */
-
 a {
   text-decoration: none;
   color: inherit;
 }
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -19,7 +17,6 @@ a {
   font-size: 24px;
   width: 80px;
 }
-
 .header-nav-list {
   display: flex;
   font-weight: bold;
@@ -52,23 +49,65 @@ a {
   left: 45%;
 }
 
+/*------------contact form-------------- */
+
+.contact-form {
+  padding: 80px 0;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.contact-form-item-name {
+  font-weight: bold;
+}
+
+.contact-form-item-input {
+  margin-top: 5px;
+  font-size: 16px;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact-form-item {
+  margin-top: 20px;
+}
+
+.contact-form-item-required {
+  color: #cc0000;
+  margin-left: 5px;
+}
+
+.contact-form-item-textarea {
+  font-size: 16px;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact-form-submit {
+  width: 300px;
+  margin: 20px auto 0;
+  padding: 10px;
+  display: block;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+}
+
 /*------------------------------------ */
 
-/*---------------footer----------------- */
-a {
-  text-decoration: none;
-  color: inherit;
-}
+/*------footer--------*/
+
 .footer {
   width: 100%;
   background-color: #000;
   color: #fff;
-  padding: 20px 20px;
+  padding: 20px 0px;
   text-align: center;
 }
 .footer-inner {
   display: flex;
-  justify-content: space-between;
   padding: 0 20px;
 }
 .footer-ttl {
@@ -83,15 +122,14 @@ a {
   padding: 20px, 20px;
   font-size: 12px;
   list-style: none;
-  margin-right:100px;
-
+  margin-right: 100px;
 }
 
 .footer-nav-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.copy{
-  margin-left:100px;
+.copy {
+  margin-left: 100px;
 }
 /*------------------------------------ */

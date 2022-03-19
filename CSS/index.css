@@ -97,36 +97,42 @@ a {
 
 /*--------------service------------------ */
 
-.top_service {
+.top_service wrap ptb-m {
+  width: 85%;
+  margin: 0 auto;
   padding: 80px 0;
+  display: block;
 }
-
+.top_service_ttl {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 20px;
+}
 .top_service_list {
   display: flex;
   flex-wrap: wrap;
-  width: 85%;
-  height: auto;
   align-items: center;
-  margin-right: 0;
-}
-
-.top_service_ttl {
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-}
-
-.service_content_wrap {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 85%;
-  margin: 0 auto;
 }
 
 .service_content {
   width: 49%;
+  display: block;
   margin-top: 20px;
+  margin-right: calc(100% - (49% * 2));
+}
+
+.service_content_wrap img {
+  width: 100%;
+}
+
+.service_content_wrap {
+  width: 85%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .service_detail {
@@ -137,23 +143,19 @@ a {
 .service_item_ttl {
   font-size: 18px;
   font-weight: bold;
-  padding: 10px;
-}
-
-.service_text {
-  display: inline-block;
 }
 
 .service_link_btn {
   display: block;
-  text-align: center;
   width: 300px;
+  text-align: center;
   font-weight: bold;
+  margin: 0 auto;
   padding: 10px;
   background-color: #cc0000;
   color: #fff;
   margin-top: 40px;
-  margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 /*--------------news------------------ */
@@ -345,7 +347,7 @@ a {
   width: 100%;
   background-color: #000;
   color: #fff;
-  padding: 20px;
+  padding: 20px 0;
   text-align: center;
 }
 .footer-inner {
