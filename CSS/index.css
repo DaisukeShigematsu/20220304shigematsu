@@ -110,29 +110,25 @@ a {
   padding: 10px;
   margin: 20px;
 }
-.top_service_list {
+
+.top_service_inner {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.service_content_wrap {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
 .service_content {
-  width: 49%;
-  display: block;
   margin-top: 20px;
   margin-right: calc(100% - (49% * 2));
 }
 
 .service_content_wrap img {
   width: 100%;
-}
-
-.service_content_wrap {
-  width: 85%;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
 }
 
 .service_detail {
