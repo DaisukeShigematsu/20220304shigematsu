@@ -1,33 +1,62 @@
 /*-------service CSS-------------- */
-
+* {
+  box-sizing: border-box;
+}
 a {
   text-decoration: none;
-  color: inherit;
+  color: #000;
 }
+
+.drawer_nav {
+  display: none;
+}
+.menu {
+  display: none;
+}
+
+/*------------header------------ */
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   height: 70px;
-  padding: 0 30px;
   background-color: #fff;
   color: #000;
+  position: fixed; /* ウィンドウを基準に画面に固定 */
+  top: 0; /* 上下の固定位置を上から0pxにする */
+  left: 0; /* 左右の固定位置を左から0pxにする */
+  z-index: 10;
 }
 
+main {
+  padding-top: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
+}
+.header-logo {
+  padding: 20px 30px;
+}
 .header-ttl {
   font-size: 24px;
   width: 80px;
 }
-
 .header-nav-list {
   display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
   font-weight: bold;
+  z-index: 10;
 }
 
 .header-nav-item:not(:last-child) {
   margin-right: 30px;
 }
+
+.header_logo img {
+  width: 70px;
+  height: auto;
+}
+
 /*------------------------------------ */
 
 /*--------------------- firstview--------------------- */
@@ -50,18 +79,15 @@ a {
 
 .firstview__content {
   position: absolute;
-  top: 120px;
+  top: 100px;
   left: 45%;
 }
-.header_logo img {
-  width: 70px;
-  height: auto;
-}
+
 /*----------------service-------------------- */
 
 .service {
   padding: 80px 0;
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
   display: block;
   height: 1000px;
@@ -95,7 +121,7 @@ a {
 }
 
 .service_img {
-  width: 290px;
+  width: 45%;
   height: auto;
   margin: 30px 0;
 }
@@ -195,4 +221,104 @@ a {
 .copy {
   margin-left: 100px;
 }
-/*------------------------------------ */
+/*---------------responsive--------------------- */
+
+@media screen and (max-width: 768px) {
+  .wrap {
+    width: 85%;
+  }
+
+  .wrap-s {
+    width: 90%;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .menu {
+    display: inline-block;
+    width: 36px;
+    height: 32px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+  }
+
+  .menu-line-top,
+  .menu-line-middle,
+  .menu-line-bottom {
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    position: absolute;
+    transition: 0.5s;
+  }
+
+  .menu-line-top {
+    top: 0;
+  }
+
+  .menu-line-middle {
+    top: 14px;
+  }
+
+  .menu-line-bottom {
+    bottom: 0;
+  }
+
+  .menu.open span:nth-of-type(1) {
+    top: 14px;
+    transform: rotate(45deg);
+  }
+
+  .menu.open span:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .menu.open span:nth-of-type(3) {
+    top: 14px;
+    transform: rotate(-45deg);
+  }
+
+  .drawer-nav {
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    background: #fff;
+    transition: 0.7s;
+  }
+
+  .drawer-nav-list {
+    padding-top: 80px;
+    text-align: center;
+  }
+
+  .drawer-nav-item {
+    margin-top: 40px;
+    color: #0033cc;
+    font-size: 18px;
+  }
+
+  .in {
+    transform: translateX(100%);
+  }
+
+  .footer-copyright {
+    margin: 0 auto;
+  }
+
+  .footer-nav-item {
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .footer-nav-item:after {
+    display: none;
+  }
+}
