@@ -1,7 +1,6 @@
 /*-------contact CSS-------------- */
 a {
   text-decoration: none;
-  color: #000;
 }
 
 .drawer_nav {
@@ -127,9 +126,7 @@ main {
   font-weight: bold;
 }
 
-/*------------------------------------ */
-
-/*------footer--------*/
+/*------footer-----------------------------------------------------------*/
 
 .footer {
   width: 100%;
@@ -182,7 +179,7 @@ main {
     text-decoration: none;
   }
 
-  .nav {
+  .drawer_nav {
     position: absolute;
     height: 100vh;
     width: 100%;
@@ -192,11 +189,11 @@ main {
     text-align: center;
   }
 
-  .nav ul {
+  .drawer_nav ul {
     padding-top: 80px;
   }
 
-  .nav ul li {
+  .drawer_nav ul li {
     list-style-type: none;
     margin-top: 50px;
   }
@@ -254,32 +251,13 @@ main {
   }
   /*------------------------------------------------------ */
 
-  .drawer_nav {
-    display: block;
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    top: 0;
-    left: -100%;
-    background: #fff;
-    transition: 0.7s;
-  }
-
-  .drawer_nav_list {
-    padding-top: 80px;
-    text-align: center;
-  }
-
-  .drawer_nav_item {
-    margin-top: 40px;
-    color: #0033cc;
-    font-size: 18px;
-  }
-
   .firstview {
-    display: flex;
-    justify-content: center;
+    display: block;
+    width: 100%;
     align-items: center;
+  }
+  .first view {
+    width: 100%;
   }
 
   .firstview_content {
@@ -287,7 +265,6 @@ main {
     font-weight: bold;
     text-align: center;
   }
-
   .message_content {
     flex-wrap: wrap;
     display: block;
@@ -302,79 +279,7 @@ main {
     font-size: 15px;
   }
 
-  /*-------------service---------------------------------------------- */
-
-  .service_content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 85%;
-    height: auto;
-    margin: 0 auto;
-    margin: 20px 20px;
-  }
-  /*-------------blog------------------------------------------------- */
-  .blog-wrap__item img {
-    width: 100%;
-    height: auto;
-  }
-
-  .blog_head_ttl {
-    display: block;
-    text-align: center;
-    font-size: 30px;
-    color: #000;
-    margin: 50px, auto;
-    margin-top: 80px;
-    margin-bottom: 30px;
-  }
-
-  .blog_list {
-    display: block;
-    width: 100%;
-    align-items: center;
-    background-color: #fff;
-    height: 800px;
-  }
-
-  .blog_inner {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .blog_item {
-    width: 85%;
-    margin-top: 20px;
-    margin-left: 30px;
-  }
-
-  .blog-wrap__item {
-    display: inline-block;
-  }
-
-  .blog_date {
-    display: flex;
-    font-size: 15px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .blog_ttl {
-    display: block;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 20px, 0;
-  }
-
   /*------------------------------------------------------ */
-
-  #recruit {
-    margin-top: 400px;
-    margin-bottom: 80px;
-  }
-
-  /*------------------------------------------------------ */
-
   .footer-copyright {
     text-align: center;
     font-size: 12px;
@@ -394,6 +299,7 @@ main {
     text-align: center;
     margin-top: 15px;
     width: 50%;
+    color: #fff;
   }
 
   .footer-nav-item:after {

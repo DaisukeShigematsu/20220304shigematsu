@@ -95,7 +95,7 @@ main {
   display: block;
   width: 30%;
   margin-top: 20px;
-  margin-left:60px;
+  margin-left: 60px;
 }
 
 .blog-wrap__item img {
@@ -312,7 +312,7 @@ a {
     font-size: 50px;
     font-weight: bold;
     text-align: center;
-    margin-top:30%;
+    margin-top: 30%;
   }
 
   .firstview__eyecatch > img {
@@ -430,6 +430,5 @@ a {
   .footer-nav-item:after {
     display: none;
   }
- 
 }
 /*------------------------------------------------------ */

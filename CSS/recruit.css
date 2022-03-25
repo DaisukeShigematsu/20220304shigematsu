@@ -224,7 +224,7 @@ a {
     text-decoration: none;
   }
 
-  .nav {
+  .drawer_nav {
     position: absolute;
     height: 100vh;
     width: 100%;
@@ -234,11 +234,11 @@ a {
     text-align: center;
   }
 
-  .nav ul {
+  .drawer_nav ul {
     padding-top: 80px;
   }
 
-  .nav ul li {
+  .drawer_nav ul li {
     list-style-type: none;
     margin-top: 50px;
   }
@@ -319,9 +319,12 @@ a {
   }
 
   .firstview {
-    display: flex;
-    justify-content: center;
+    display: block;
+    width: 100%;
     align-items: center;
+  }
+  .first view {
+    width: 100%;
   }
 
   .firstview_content {
@@ -350,7 +353,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 85%;
+    width: 100%;
     height: auto;
     margin: 0 auto;
     margin: 20px 20px;

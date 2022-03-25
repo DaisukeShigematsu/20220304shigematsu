@@ -1,4 +1,4 @@
-/*-------index CSS-------------- */
+/*-------index CSS------------------------------------------------------ */
 * {
   box-sizing: border-box;
 }
@@ -10,13 +10,8 @@ a {
 p {
   display: block;
 }
-.drawer_nav {
-  display: none;
-}
-.menu {
-  display: none;
-}
-/*------------header------------ */
+
+/*------------header---------------------------------------------------- */
 
 .header {
   display: flex;
@@ -62,7 +57,7 @@ main {
   justify-content: space-between;
 }
 
-/*--------------------- firstview--------------------- */
+/*--------------------- firstview----------------------------------------- */
 
 .firstview {
   position: relative;
@@ -95,7 +90,7 @@ main {
   padding: 20px 20px;
 }
 
-/*-----------message------------------------- */
+/*-----------message------------------------------------------------------- */
 
 .message {
   height: 300px;
@@ -123,7 +118,7 @@ main {
   margin-top: 20px;
 }
 
-/*--------------service------------------ */
+/*--------------service------------------------------------------------ */
 
 .top_service wrap ptb-m {
   width: 85%;
@@ -194,7 +189,7 @@ main {
   margin-bottom: 40px;
 }
 
-/*--------------news------------------ */
+/*--------------news---------------------------------------------------------- */
 
 .top_news_content {
   display: block;
@@ -256,7 +251,7 @@ main {
   font-weight: bold;
 }
 
-/*-------------blog------------------ */
+/*-------------blog---------------------------------------------------------- */
 
 .blog_head_ttl {
   display: block;
@@ -322,7 +317,7 @@ main {
   margin-top: 40px;
 }
 
-/*---------------------recruit--------------------- */
+/*---------------------recruit------------------------------------------------- */
 
 #recruit {
   margin-top: 50px;
@@ -376,7 +371,7 @@ main {
   font-size: 25px;
 }
 
-/*---------------contact----------------- */
+/*---------------contact------------------------------------------------------ */
 
 .contact__content {
   display: block;
@@ -415,7 +410,7 @@ main {
   margin: 0 auto;
 }
 
-/*---------------footer----------------- */
+/*---------------footer----------------------------------------------------- */
 a {
   text-decoration: none;
   color: inherit;
@@ -470,10 +465,6 @@ a {
     display: none;
   }
 
-  a {
-    text-decoration: none;
-  }
-
   .menu {
     display: inline-block;
     width: 36px;
@@ -485,12 +476,11 @@ a {
     margin-bottom: 30px;
   }
 
-  /*---------------------------------------------*/
+  /*--------------------drawer nav---------------------------------------------*/
   a {
     text-decoration: none;
-    color: blue;
   }
-  .nav {
+  .drawer_nav {
     position: absolute;
     height: 100vh;
     width: 100%;
@@ -498,13 +488,15 @@ a {
     background: #eee;
     transition: 0.7s;
     text-align: center;
+    z-index: 10;
   }
-  .nav ul {
-    padding-top: 80px;
+  .drawer_nav ul {
+    padding-bottom: 50px;
   }
-  .nav ul li {
+  .drawer_nav ul li {
     list-style-type: none;
     margin-top: 50px;
+    padding: 30px, 0;
   }
   .menu {
     display: inline-block;
@@ -548,12 +540,15 @@ a {
   .in {
     transform: translateX(100%);
   }
-  /*------------------------------------------------------ */
+  /*-------------------firstview----------------------------------- */
 
   .firstview {
     display: flex;
-    justify-content: center;
+    width:100%;
     align-items: center;
+  }
+  .first view {
+    width: 100%;
   }
 
   .firstview_content {
