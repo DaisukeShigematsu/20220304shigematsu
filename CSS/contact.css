@@ -165,19 +165,40 @@ main {
   margin-left: 100px;
 }
 
-/*-------------responsive--------------- */
+/*------------------responsive------------------------------------------ */
 
 @media screen and (max-width: 768px) {
-  .wrap {
+  .header-nav.wrap {
     width: 85%;
   }
-
   .wrap-s {
     width: 90%;
   }
-
   .header-nav {
     display: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .nav {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    background: #eee;
+    transition: 0.7s;
+    text-align: center;
+  }
+
+  .nav ul {
+    padding-top: 80px;
+  }
+
+  .nav ul li {
+    list-style-type: none;
+    margin-top: 50px;
   }
 
   .menu {
@@ -186,29 +207,31 @@ main {
     height: 32px;
     cursor: pointer;
     position: relative;
-    z-index: 10;
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-bottom: 30px;
   }
 
-  .menu-line-top,
-  .menu-line-middle,
-  .menu-line-bottom {
+  .menu__line--top,
+  .menu__line--middle,
+  .menu__line--bottom {
     display: inline-block;
-    width: 100%;
+    width: 90%;
     height: 4px;
     background-color: #000;
     position: absolute;
     transition: 0.5s;
   }
 
-  .menu-line-top {
+  .menu__line--top {
     top: 0;
   }
 
-  .menu-line-middle {
+  .menu__line--middle {
     top: 14px;
   }
 
-  .menu-line-bottom {
+  .menu__line--bottom {
     bottom: 0;
   }
 
@@ -226,7 +249,12 @@ main {
     transform: rotate(-45deg);
   }
 
-  .drawer-nav {
+  .in {
+    transform: translateX(100%);
+  }
+  /*------------------------------------------------------ */
+
+  .drawer_nav {
     display: block;
     position: absolute;
     height: 100vh;
@@ -237,32 +265,142 @@ main {
     transition: 0.7s;
   }
 
-  .drawer-nav-list {
+  .drawer_nav_list {
     padding-top: 80px;
     text-align: center;
   }
 
-  .drawer-nav-item {
+  .drawer_nav_item {
     margin-top: 40px;
     color: #0033cc;
     font-size: 18px;
   }
 
-  .in {
-    transform: translateX(100%);
+  .firstview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .footer-copyright {
+  .firstview_content {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .message_content {
+    flex-wrap: wrap;
+    display: block;
+  }
+
+  .message_ttl {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .message_text {
+    font-size: 15px;
+  }
+
+  /*-------------service---------------------------------------------- */
+
+  .service_content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 85%;
+    height: auto;
     margin: 0 auto;
+    margin: 20px 20px;
+  }
+  /*-------------blog------------------------------------------------- */
+  .blog-wrap__item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .blog_head_ttl {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    color: #000;
+    margin: 50px, auto;
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+
+  .blog_list {
+    display: block;
+    width: 100%;
+    align-items: center;
+    background-color: #fff;
+    height: 800px;
+  }
+
+  .blog_inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .blog_item {
+    width: 85%;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+
+  .blog-wrap__item {
+    display: inline-block;
+  }
+
+  .blog_date {
+    display: flex;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .blog_ttl {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px, 0;
+  }
+
+  /*------------------------------------------------------ */
+
+  #recruit {
+    margin-top: 400px;
+    margin-bottom: 80px;
+  }
+
+  /*------------------------------------------------------ */
+
+  .footer-copyright {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 100px;
+  }
+
+  .footer-nav-list {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 12px;
+    list-style: none;
   }
 
   .footer-nav-item {
+    display: block;
     text-align: center;
-    margin-top: 10px;
-    width: 100%;
+    margin-top: 15px;
+    width: 50%;
   }
 
   .footer-nav-item:after {
     display: none;
   }
+  .copy {
+    margin-left: 50px;
+  }
 }
+/*------------------------------------------------------ */
