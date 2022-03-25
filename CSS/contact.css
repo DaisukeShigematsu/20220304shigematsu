@@ -7,10 +7,9 @@ a {
 .drawer_nav {
   display: none;
 }
-.menu{
-  display:none;
+.menu {
+  display: none;
 }
-
 
 /*------------header------------ */
 
@@ -166,7 +165,6 @@ main {
   margin-left: 100px;
 }
 
-
 /*-------------responsive--------------- */
 
 @media screen and (max-width: 768px) {
@@ -228,7 +226,7 @@ main {
     transform: rotate(-45deg);
   }
 
-  .drawer-nav{
+  .drawer-nav {
     display: block;
     position: absolute;
     height: 100vh;
@@ -236,7 +234,7 @@ main {
     top: 0;
     left: -100%;
     background: #fff;
-    transition: .7s;
+    transition: 0.7s;
   }
 
   .drawer-nav-list {
@@ -268,5 +266,3 @@ main {
     display: none;
   }
 }
-
-
