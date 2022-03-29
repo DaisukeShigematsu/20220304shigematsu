@@ -483,15 +483,6 @@ a {
     display: none;
   }
 
-  .menu {
-    display: inline-block;
-    width: 36px;
-    height: 32px;
-    cursor: pointer;
-    position: relative;
-    margin-right: 30px;
-    margin-bottom: 50px;
-  }
 
   /*-----------------------------------------------------------------*/
   a {
@@ -504,8 +495,9 @@ a {
     height: 32px;
     cursor: pointer;
     position: relative;
-    left: 20px;
-    top: 20px;
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-bottom: 30px;
   }
   .menu__line--top,
   .menu__line--middle,
@@ -571,9 +563,7 @@ a {
   /*-------------------firstview----------------------------------- */
 
   .firstview {
-    display: flex;
     width: 100%;
-    align-items: center;
   }
   .first view {
     width: 100%;
@@ -611,15 +601,12 @@ a {
     margin: 20px 20px;
   }
 
-
-
   .service_img {
-  width: 100%;
-  height: auto;
-  margin: 10px 0;
-  margin-left:0;
-}
-
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    margin-left: 0;
+  }
 
   .service_content {
     display: flex;

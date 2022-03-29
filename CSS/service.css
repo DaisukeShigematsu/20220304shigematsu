@@ -57,10 +57,8 @@ main {
 .header-nav-item:not(:last-child) {
   margin-right: 30px;
 }
-.flex__item {
-  display: flex;
-  justify-content: space-between;
-}
+
+/*------------header------------------------------------------------------------ */
 
 .drawer_nav {
   position: absolute;
@@ -128,15 +126,17 @@ main {
 }
 
 .service_content {
+  width: 85%;
   display: flex;
-  flex-wrap: wrap;
+  margin-left: 100px;
   margin: 0, auto;
   border-top: 1px solid #000;
 }
 
 .service_content4 {
+  width: 85%;
   display: flex;
-  flex-wrap: wrap;
+  margin-left: 100px;
   margin: 0, auto;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
@@ -375,40 +375,42 @@ a {
   }
 
   .service_content {
-    width: 85%;
-    display: flex;
+    width: 90%;
+    display: block;
     margin: 0, auto;
-    border-top: 1px solid #000;
-    margin-left: 50px;
+    margin-left: 30px;
   }
 
   .service_content4 {
-    width: 85%;
-    display: flex;
+    width: 90%;
+    display: block;
     margin: 0, auto;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
     margin-left: 30px;
   }
 
   .service_detail {
     width: 100%;
     display: block;
-    margin: 0 auto;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .service_img img {
     width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 
   .service_item_ttl {
+    display: inline-block;
     font-size: 24px;
     font-weight: bold;
-    margin: 0;
-    padding: 0;
+    margin-bottom: 10px;
   }
   .service_text {
-    display: block;
+    display: inline-block;
+    margin-bottom: 10px;
   }
 
   /*---------------contact-------------------------------------------------- */
