@@ -19,7 +19,7 @@ a {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 70px;
+  height: auto;
   background-color: #fff;
   color: #000;
   position: fixed; /* ウィンドウを基準に画面に固定 */
@@ -212,6 +212,7 @@ a {
   a {
     text-decoration: none;
   }
+  /*------------------------------------------------------ */
 
   .nav {
     position: absolute;
@@ -298,7 +299,6 @@ a {
     z-index: 10;
     margin-top: 70px;
     text-align: center;
-
   }
 
   .drawer_nav_list {
@@ -338,18 +338,24 @@ a {
 
   /*-------------company---------------------------------------------- */
 
+  .small-container {
+    width: 80%;
+    margin: 0 auto;
+    margin-right: 30px;
+  }
+
   .company__list {
     width: 100%;
     display: flex;
+    justify-content: space-between;
     border-top: 1px solid #000;
-    margin: 50px, 20px;
   }
 
   .company__list-data {
     display: block;
     font-weight: bold;
     list-style: none;
-    width: 80%;
+    width: 90%;
     margin: 20px 0px;
     text-align: center;
   }
@@ -357,10 +363,14 @@ a {
   .company__list-detail {
     display: inline-block;
     text-align: left;
-    width: 80%;
+    width: 90%;
     margin: 20px 0px;
   }
 
+  .list {
+    width: 90%;
+    border-bottom: 1px solid #000;
+  }
   /*------------------------------------------------------ */
 
   /*------------------------------------------------------ */
