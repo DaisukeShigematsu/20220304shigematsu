@@ -10,9 +10,7 @@ a {
 .drawer_nav {
   display: none;
 }
-.menu {
-  display: none;
-}
+
 .p {
   display: block;
 }
@@ -81,7 +79,6 @@ main {
   margin-top: 50px;
   padding: 30px, 0;
 }
-
 
 /*----------- firstview-------------------------------------------------------*/
 
@@ -235,14 +232,9 @@ a {
   margin-left: 100px;
 }
 
-
-
-
-
-
 /*------------------responsive--------------------------------------------------- */
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .header-nav.wrap {
     width: 85%;
   }
@@ -268,7 +260,14 @@ a {
     text-align: center;
   }
 
+  .nav ul {
+    padding-top: 80px;
+  }
 
+  .nav ul li {
+    list-style-type: none;
+    margin-top: 50px;
+  }
 
   .menu {
     display: inline-block;
@@ -292,7 +291,6 @@ a {
     position: absolute;
     transition: 0.5s;
   }
-
 
   .menu__line--top {
     top: 0;
@@ -337,7 +335,6 @@ a {
     z-index: 10;
     margin-top: 70px;
     text-align: center;
-
   }
 
   .drawer_nav_list {
@@ -354,69 +351,74 @@ a {
   /*------------------------------------------------------ */
 
   .firstview {
-    width: 100%;
+  position: relative;
   }
-  .firstview img{
+  .firstview img {
     width: 100%;
   }
 
   .firstview_content {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
   }
+
+.firstview__content {
+  position: absolute;
+  top: 100px;
+  left: 45%;
+  }
+
   /*------------------------------------------------------ */
 
   #recruit {
     margin-top: 400px;
     margin-bottom: 80px;
-
   }
 
+  .sinsotsu_saiyou {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+  .recruit_ttl {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 0;
+    border-bottom: 1px solid #000;
+  }
 
-    .sinsotsu_saiyou {
-  width: 90%;
-  margin: 0 auto;
-  margin-top: 70px;
-  margin-bottom: 50px;
-}
-.recruit_ttl {
-  font-size: 30px;
-  font-weight: bold;
-  padding: 10px 0;
-  border-bottom: 1px solid #000;
-}
+  .recruit_text {
+    margin: 30px 0;
+  }
 
-.recruit_text {
-  margin: 30px 0;
-}
+  .recruit_table {
+    width: 100%;
+  }
 
-.recruit_table {
-  width: 100%;
-}
+  .recruit_table_th {
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px 30px;
+    border: 1px solid #000;
+    width: 30%;
+    background: #f5f5f5;
+  }
 
-.recruit_table_th {
-  margin: 0 auto;
-  text-align: center;
-  padding: 15px 30px;
-  border: 1px solid #000;
-  width: 30%;
-  background: #f5f5f5;
-}
+  .recruit_table_td {
+    margin-left: 0;
+    text-align: left;
+    padding: 15px 30px 15px 15px;
+    border: 1px solid #000;
+  }
 
-.recruit_table_td {
-  margin-left: 0;
-  text-align: left;
-  padding: 15px 30px 15px 15px;
-  border: 1px solid #000;
-}
-
-.career_saiyou {
-  width: 90%;
-  margin: 0 auto;
-  margin-top: 70px;
-  margin-bottom: 100px;
-}
+  .career_saiyou {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 100px;
+  }
 
   /*------------------------------------------------------ */
 

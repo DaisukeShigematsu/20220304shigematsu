@@ -1,5 +1,7 @@
 /*-------company CSS-------------- */
-
+* {
+  box-sizing: border-box;
+}
 a {
   text-decoration: none;
   color: #000;
@@ -56,8 +58,6 @@ main {
   width: 70px;
   height: auto;
 }
-
-/*------------------------------------ */
 
 /*--------------------- firstview--------------------- */
 
@@ -339,15 +339,16 @@ a {
   /*-------------company---------------------------------------------- */
 
   .small-container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    margin-right: 30px;
   }
 
   .company__list {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+    margin-left: 50px;
     border-top: 1px solid #000;
   }
 
@@ -355,7 +356,7 @@ a {
     display: block;
     font-weight: bold;
     list-style: none;
-    width: 90%;
+    width: 100%;
     margin: 20px 0px;
     text-align: center;
   }
@@ -363,7 +364,7 @@ a {
   .company__list-detail {
     display: inline-block;
     text-align: left;
-    width: 90%;
+    width: 100%;
     margin: 20px 0px;
   }
 

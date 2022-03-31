@@ -59,7 +59,7 @@ main {
   height: auto;
 }
 
-/*--------------------- firstview--------------------- */
+/*----------- firstview--------------------- */
 
 .firstview {
   position: relative;
@@ -98,16 +98,18 @@ main {
   align-items: center;
   border: 1px solid #222;
   padding: 20px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .news_item {
   display: block;
   padding: 10px;
 }
+
 .news_date {
   margin-right: 10px;
 }
+
 .news_ttl {
   display: block;
   font-weight: bold;
@@ -191,37 +193,10 @@ a {
 }
 /*------------------responsive------------------------------------------ */
 
-@media screen and (max-width: 768px) {
-  .header-nav.wrap {
-    width: 85%;
-  }
-  .wrap-s {
-    width: 90%;
-  }
-  .header-nav {
-    display: none;
-  }
 
-  a {
-    text-decoration: none;
-  }
 
-  /*------------------responsive------------------------------------------ */
 
-@media screen and (max-width: 768px) {
-  .header-nav.wrap {
-    width: 85%;
-  }
-  .wrap-s {
-    width: 90%;
-  }
-  .header-nav {
-    display: none;
-  }
 
-  a {
-    text-decoration: none;
-  }
 
   @media screen and (max-width: 768px) {
   .header-nav.wrap {
@@ -237,7 +212,7 @@ a {
   a {
     text-decoration: none;
   }
-  /*------------------------------------------------------ */
+
 
   .nav {
     position: absolute;
@@ -310,7 +285,7 @@ a {
   .in {
     transform: translateX(100%);
   }
-  /*------------------------------------------------------ */
+  /*----------------------------------------- */
 
   .drawer_nav {
     display: block;
@@ -324,7 +299,6 @@ a {
     z-index: 10;
     margin-top: 70px;
     text-align: center;
-
   }
 
   .drawer_nav_list {
@@ -339,6 +313,22 @@ a {
   }
 
   /*------------------------------------------------------ */
+
+  .news_content {
+    align-items: center;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 80px;
+    width: 90%;
+  }
+
+
+
+
+
+
+
+    /*------------------------------------------------------ */
 
   .footer-copyright {
     text-align: center;
@@ -368,4 +358,5 @@ a {
     margin-left: 50px;
   }
 }
-/*------------------------------------------------------ */
+
+*---------------------------------------- */
