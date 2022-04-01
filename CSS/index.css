@@ -79,17 +79,17 @@ main {
 
 .firstview {
   position: relative;
+  width:100%;
 }
 
 
 .firstview__eyecatch > img {
   width: 100%;
   height: 400px;
+  object-fit: cover;
 }
 .firstview__content {
   width:100%;
-  position: absolute;
-  top: 200px;
   text-align: center;
   position: absolute;
   top: 50%;
@@ -102,6 +102,9 @@ main {
 .firstview__content-eyecatch {
   color: #fff;
   font-size:50px;
+  top:200px;
+  margin:0,auto;
+  padding:0 auto;
 
 }
 
