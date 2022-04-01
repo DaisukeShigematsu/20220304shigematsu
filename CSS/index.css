@@ -81,31 +81,36 @@ main {
   position: relative;
 }
 
-.firstview__content {
-  position: absolute;
-  top: 200px;
-  left: 10%;
-}
 
 .firstview__eyecatch > img {
   width: 100%;
-  height: 400px;
-  object-fit: cover;
+  height: 500px;
+}
+.firstview__content {
+  width:100%;
+  position: absolute;
+  top: 200px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 .firstview__content-eyecatch {
   color: #fff;
-  font-size: 50px;
-  padding: 20, auto;
-  margin: 0, auto;
+  font-size:50px;
+
 }
 
 .firstview__content-sub-copy {
   color: #fff;
   font-weight: bold;
-  text-align: center;
   font-size: 20px;
   padding: 20px 20px;
+
 }
 
 /*-----------message------------------------------------------------------- */
